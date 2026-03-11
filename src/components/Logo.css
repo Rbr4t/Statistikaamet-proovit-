@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+.dots {
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  grid-template-rows: repeat(3, 4px);
+  gap: 6px;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14px; /* 1 dot (4px) + 1 gap (6px) + 1 dot (4px) */
+}
+.text h1 {
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-size: 5px;
+}
