@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './Question.css'
 
 type Props = {
-  question: {
+  question: 
+  {
     text: string
     options: string[]
     correct: string
@@ -14,14 +15,11 @@ type Props = {
 }
 
 function Question({ question, current, total, onNext, isLast }: Props) {
-  const [selected, setSelected] = useState(null)
-  const [confirmed, setConfirmed] = useState(false)
-
-  function handleConfirm() {
-    if (!selected) return setConfirmed(true)
-  }
+  const [selected, setSelected] = useState<string | null>(null)
+  const [confirmed, setConfirmed] = useState<boolean>(false)
 
   function handleNext() {
+    if (!selected) return
     onNext({ question: question.text, selected, correct: question.correct })
     setSelected(null)
     setConfirmed(false)
@@ -58,7 +56,7 @@ function Question({ question, current, total, onNext, isLast }: Props) {
 
       <div className="question-actions">
         {!confirmed
-          ? <button className="question-btn" onClick={handleConfirm} disabled={!selected}>Vasta</button>
+          ? <button className="question-btn" onClick={() => setConfirmed(true)} disabled={!selected}>Vasta</button>
           : <button className="question-btn" onClick={handleNext}>{isLast ? 'Vaata tulemusi' : 'Järgmine'}</button>
         }
       </div>
