@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-top: auto;
 }
 
 .footer > span {
@@ -62,6 +63,5 @@ a:hover {
 
   .footer-section {
     flex: none;
-    width: 100%;
   }
 }

@@ -5,11 +5,11 @@ import Header from "./components/Header/Header"
 function App() {
 
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
       <Content />
       <Footer />
-    </>
+    </div>
   )
 }
 
