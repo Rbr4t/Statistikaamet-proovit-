@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Aino";
-  src: url("./assets/fonts/Aino-Regular.woff2") format("woff2");
+  src: url("https://github.com/Rbr4t/Statistikaamet-proovit-/public/font/Aino-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Aino";
-  src: url("./assets/fonts/Aino-Bold.woff2") format("woff2");
+  src: url("https://github.com/Rbr4t/Statistikaamet-proovit-/public/font/Aino-Bold.woff2") format("woff2");
 }
 
 :root {
